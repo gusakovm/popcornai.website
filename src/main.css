@@ -1,37 +1,234 @@
+/* Основные стили */
 html {
-  background-color: #100F16;
+  background-color: #292736;
   min-height: 100vh;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 html, * {
   margin: 0;
   padding: 0;
-  color: #BDBDBD;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
+  color: #ffffff;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Общие стили */
-h1, h2, h3, h4 {
-  font-family: 'Lora', serif;
-  color: #FFF;
-  margin: 40px 0 20px;
+/* Hero Section */
+.hero {
+  padding: 40px 40px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-p {
+.hero-content {
+  max-width: 1100px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-left {
+  /* Убираем отдельный фон - контент теперь в общем блоке */
+}
+
+.main-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.tagline {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 20px;
+  line-height: 1.7;
 }
 
-a {
-  color: #BDBDBD;
+.contact-link-box {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-link-box, .contact-link-box * {
+  font-size: 20px;
+}
+
+.contact-link {
+  /* font-size: 18px; */
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  transition: color 0.6s ease;
+  transition: color 0.3s ease;
+  display: inline-block;
 }
 
-a:hover {
-  color: #FFF;
+.contact-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-image {
+  /* Убираем отдельный фон - персонаж теперь в общем блоке */
+}
+
+.character {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Apps Section */
+.apps-section {
+  padding: 40px 40px;
+  /* background: rgba(255, 255, 255, 0.02); */
+  backdrop-filter: blur(10px);
+}
+
+.apps-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 20px;
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.app-item {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 60px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px 60px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.app-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.app-item:hover .app-screenshot {
+  transform: scale(1.02);
+}
+
+.app-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 80px; */
+  /* overflow: hidden; */
+}
+
+.app-screenshot {
+  max-height: 360px;
+  height: auto;
+  scale: 1.5;
+  transition: transform 0.3s ease;
+}
+
+.app-placeholder {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 30px rgba(240, 147, 251, 0.3);
+}
+
+.app-text h3 {
+  font-size: 42px;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.app-text p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-size: 12px;
+  margin-top: auto;
+}
+
+/* Main content wrapper */
+.hero, .apps-section {
+  flex: 1 0 auto;
+}
+
+.footer a {
+  font-size: 12px;
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer a:hover {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Стили для Terms страницы */
@@ -41,7 +238,14 @@ a:hover {
   padding: 40px;
   font-size: 18px;
   line-height: 1.6;
-  color: #FFF;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); */
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .container .logo {
@@ -49,145 +253,176 @@ a:hover {
   margin-bottom: 40px;
 }
 
-.container h1 { 
+.container h1, .container h2, .container h3, .container h4 {
+  font-family: 'ABeeZee', sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.container h1 {
   font-size: 40px;
   margin-top: 0;
-  color: #FFF;
 }
 
-.container h2 { 
+.container h2 {
   font-size: 28px;
   margin-top: 40px;
-  color: #FFF;
 }
 
-.container h3 { 
+.container h3 {
   font-size: 24px;
   margin-top: 30px;
-  color: #FFF;
 }
 
-.container h4 { 
+.container h4 {
   font-size: 20px;
   margin-top: 25px;
-  color: #FFF;
 }
 
-.container p {
-  margin-bottom: 20px;
-  color: #FFF;
+.container p, .container ul, .container li {
+  color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
+}
+
+.container a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.container a:hover {
+  color: #ffffff;
 }
 
 .container ul {
   margin-bottom: 20px;
   padding-left: 20px;
-  color: #FFF;
-  font-size: 18px;
 }
 
 .container li {
   margin-bottom: 10px;
-  color: #FFF;
-  font-size: 18px;
-}
-
-/* Стили для главной страницы */
-.box {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 32px;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 680px;
-  margin: 0 auto;
-}
-
-.box img {
-  margin-bottom: 20px;
-}
-
-.box h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-.box h1 div {
-  display: block;
-  margin: 28px 0;
-  line-height: 36px;
-}
-
-.box a {
-  font-size: 28px;
-}
-
-.box a span {
-  opacity: 0.1;
-  transition: opacity 0.6s ease;
-}
-
-.box a:hover span {
-  opacity: 0.2;
-  color: #FFF;
-}
-
-/* Стили футера */
-.footer {
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 12px;
-}
-
-.footer a {
-  font-size: 12px;
-  margin: 0 10px;
-  opacity: 0.6;
-  transition: opacity 0.6s ease;
-}
-
-.footer a:hover {
-  opacity: 1;
 }
 
 /* Адаптивные стили */
+@media (max-width: 1100px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+  }
+  
+  .character {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
-  /* Стили для Terms страницы */
+  .hero {
+    padding: 60px 20px;
+  }
+  
+  .hero-content {
+    padding: 40px 30px;
+  }
+  
+  .hero-left h1 {
+    font-size: 36px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+  }
+  
+  .description {
+    font-size: 16px;
+  }
+  
+  .contact-link {
+    font-size: 16px;
+  }
+  
+  .character {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .apps-section {
+    padding: 80px 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 42px;
+  }
+  
+  .app-item {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 30px;
+    text-align: center;
+  }
+  
+  .app-screenshot {
+    max-width: 250px;
+    scale: 1.2;
+  }
+
+  .app-placeholder {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .app-text h3 {
+    font-size: 32px;
+  }
+  
+  .app-text p {
+    font-size: 18px;
+  }
+  
   .container {
-    padding: 20px;
+    padding: 30px 20px;
   }
   
   .container h1 { font-size: 28px; }
   .container h2 { font-size: 24px; }
   .container h3 { font-size: 20px; }
   .container h4 { font-size: 18px; }
+}
 
-  /* Стили для главной страницы */
-  .box {
-    padding: 0 28px;
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 20px;
   }
   
-  .box h1 {
-    font-size: 20px;
+  .hero-content {
+    padding: 30px 20px;
   }
   
-  .box a {
-    font-size: 20px;
+  .hero-left h1 {
+    font-size: 28px;
   }
   
-  .box h1 div {
-    line-height: 32px;
+  .section-header h2 {
+    font-size: 32px;
+  }
+  
+  .app-text h3 {
+    font-size: 28px;
+  }
+  
+  .character {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .app-screenshot {
+    max-width: 200px;
+    scale: 1.0;
   }
 
-  /* Общие адаптивные стили */
-  .footer {
-    bottom: 10px;
+  .app-placeholder {
+    width: 200px;
+    height: 200px;
   }
-} 
+}
