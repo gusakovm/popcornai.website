@@ -147,6 +147,27 @@ body {
   object-fit: contain;
 }
 
+.early-access-link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff6b9d;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  background: rgba(255, 107, 157, 0.1);
+  border: 1px solid rgba(255, 107, 157, 0.2);
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.early-access-link:hover {
+  background: rgba(255, 107, 157, 0.2);
+  border-color: rgba(255, 107, 157, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 157, 0.2);
+}
+
 .hero-right {
   display: flex;
   justify-content: center;
@@ -379,7 +400,12 @@ body {
   .app-store-btn img, .google-play-btn img {
     height: 45px;
   }
-  
+
+  .early-access-link {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
   .app-screenshot {
     max-height: 300px;
   }
@@ -447,7 +473,12 @@ body {
   .feature-item {
     padding: 30px 20px;
   }
-  
+
+  .early-access-link {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
   .app-screenshot {
     max-height: 250px;
   }
