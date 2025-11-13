@@ -149,23 +149,24 @@ body {
 
 .early-access-link {
   display: inline-block;
-  font-size: 16px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 18px;
   font-weight: 600;
-  color: #ff6b9d;
+  color: white;
   text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 24px;
-  background: rgba(255, 107, 157, 0.1);
-  border: 1px solid rgba(255, 107, 157, 0.2);
+  padding: 14px 32px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #ff8c42 0%, #ff6b9d 100%);
+  border: none;
+  box-shadow: 0 4px 16px rgba(255, 107, 157, 0.3);
   transition: all 0.3s ease;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .early-access-link:hover {
-  background: rgba(255, 107, 157, 0.2);
-  border-color: rgba(255, 107, 157, 0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 157, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 107, 157, 0.4);
+  background: linear-gradient(135deg, #ff9854 0%, #ff7aad 100%);
 }
 
 .hero-right {
@@ -402,8 +403,8 @@ body {
   }
 
   .early-access-link {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 12px 28px;
   }
 
   .app-screenshot {
@@ -475,8 +476,8 @@ body {
   }
 
   .early-access-link {
-    font-size: 13px;
-    padding: 8px 16px;
+    font-size: 15px;
+    padding: 10px 24px;
   }
 
   .app-screenshot {
