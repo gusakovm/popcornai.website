@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SlayDay | Your Pocket Bestie for Daily Decisions</title>
   <meta name="description" content="Your pocket bestie that helps you make everyday decisions with ease — from tiny choices to weekly plans.">
   <link rel="icon" type="image/png" href="/src/favicon.png">
-  <link rel="stylesheet" href="/slayday/slayday.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
-  
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://popcornai.co/slayday/">
   <meta property="og:title" content="SlayDay | Your Pocket Bestie for Daily Decisions">
@@ -20,115 +18,37 @@
   <meta property="twitter:title" content="SlayDay | Your Pocket Bestie for Daily Decisions">
   <meta property="twitter:description" content="Your pocket bestie that helps you make everyday decisions with ease — from tiny choices to weekly plans.">
   <meta property="twitter:image" content="https://popcornai.co/src/slayday-pre2.png">
+
+  <script>
+    window.location.replace('https://herslayday.com');
+  </script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f6f1eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid rgba(255, 140, 66, 0.2);
+      border-top-color: #ff8c42;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <!-- Gradient Background Header -->
-  <div class="gradient-header"></div>
-  
-  <!-- Navigation -->
-  <nav class="navigation">
-    <a href="/" class="back-link">← Back to PopcornAI</a>
-  </nav>
-
-  <!-- Main Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-left">
-        <h1>SlayDay</h1>
-        <p class="description">
-          SlayDay helps you make everyday decisions with ease — from tiny choices to weekly plans. With fun, playful mechanics built in, it turns decision-making into a game you'll actually enjoy. No more decision fatigue, just clear choices and confident moves.
-        </p>
-        <div class="app-buttons">
-          <p class="coming-soon-text">Coming soon to app stores</p>
-          <div class="store-buttons-row">
-            <div class="app-store-btn disabled">
-              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" />
-            </div>
-            <div class="google-play-btn disabled">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
-            </div>
-          </div>
-          <a href="https://herslayday.com" class="early-access-link">Get Early Access →</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="app-preview">
-          <img src="/src/slayday-header.png" alt="SlayDay App Preview" class="app-screenshot">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="features-section">
-    <div class="features-content">
-      <h2>Why you'll love SlayDay</h2>
-      
-      <div class="features-grid">
-        <div class="feature-item">
-          <div class="feature-emoji">✨</div>
-          <h3>Her Fire Calendar</h3>
-          <p>SlayDay is more than a planner — it’s your personal cosmic guide. Every morning you’ll see what the day is good for, what to avoid, and where your energy truly shines.</p>
-        </div>
-        
-        <div class="feature-item">
-          <div class="feature-emoji">🔮</div>
-          <h3>Daily Confidence, Cosmic Powered</h3>
-          <p>From beauty choices to big life decisions, SlayDay gives you a clear “yes or no” vibe-check based on astrology, numerology, and energy cycles. No more second-guessing — your day feels aligned.</p>
-        </div>
-        
-        <div class="feature-item">
-          <div class="feature-emoji">💌</div>
-          <h3>Personalized Just for You</h3>
-          <p>Answer a quick daily quiz and unlock a feed of 5 magical “to-dos” and 2 warnings crafted for your unique stars. Every girl’s calendar is different — because no two days feel the same.</p>
-        </div>
-        
-        <div class="feature-item">
-          <div class="feature-emoji">💖</div>
-          <h3>Fun, Gen Z Native Design</h3>
-          <p>SlayDay looks and feels like your favorite social app — bold emojis, glowing colors, and dopamine-rich vibes. It’s astrology, but made playful, stylish, and instantly scrollable.</p>
-        </div>
-        
-        <div class="feature-item">
-          <div class="feature-emoji">🌙</div>
-          <h3>Unlock Secret Windows</h3>
-          <p>Some days are made for bold moves, others for quiet recharging. SlayDay highlights your lucky windows and hidden vibe-killers so you’re always one step ahead.</p>
-        </div>
-        
-        <div class="feature-item">
-          <div class="feature-emoji">👑</div>
-          <h3>Built for Slay Queens Everywhere</h3>
-          <p>SlayDay is Flo for astrology — a modern life guide made by women, for women. It’s your daily ritual to glow with confidence, sync with your stars, and truly slay your day.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="cta-content">
-      <h2>Ready to slay your day?</h2>
-      <p>Join thousands of users who've transformed their decision-making process</p>
-      <div class="cta-app-buttons">
-        <p class="cta-coming-soon-text">Coming soon to app stores</p>
-        <div class="cta-store-buttons-row">
-          <div class="app-store-btn disabled">
-            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" />
-          </div>
-          <div class="google-play-btn disabled">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
-          </div>
-        </div>
-        <a href="https://herslayday.com" class="early-access-link">Get Early Access →</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="footer">
-    <a href="/terms">Terms of Service</a>
-    <a href="/privacy">Privacy Policy</a>
-    <span class="footer-divider">|</span>
-    <span class="footer-credit">Made with ❤️ by <a href="/">PopcornAI</a></span>
-  </div>
+  <div class="spinner"></div>
 </body>
 </html>
